@@ -702,6 +702,19 @@ body.light-theme .menu-item:hover {
   section {
     padding: 60px 20px;
   }
+  header {
+    padding: 10px 50px;
+  }
+  .circle-container {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -711,6 +724,11 @@ body.light-theme .menu-item:hover {
   .logo {
     width: 72px;
     height: 72px;
+  }
+  .circle-container {
+    width: 90px;
+    height: 90px;
+    top: 5px;
   }
 }
 
@@ -1107,20 +1125,16 @@ body.light-theme .sun-icon {
     font-size: 12px;
   }
 
-  .main h2 {
-    font-size: 0.8em;
-  }
-
-  .main h3 {
-    font-size: 1.4em;
-  }
-
   .pricing-container {
     flex-direction: column; /* Kartu disusun vertikal di layar kecil */
     align-items: center;
   }
   .card {
-    max-width: 90%; /* Mengambil lebih banyak ruang di layar kecil */
+    max-width: 300px; /* Mengambil lebih banyak ruang di layar kecil */
+  }
+
+  .form-container {
+    max-width: 400px;
   }
 }
 
