@@ -116,6 +116,120 @@
         </div>
       </section>
 
+      <section class="portofolio" id="portofolio">
+          <div class="slider-wrapper">
+        <div class="slider-track-projects">
+            <div class="project-card" 
+                 data-title="Website Hotel" 
+                 data-image="images/hotel.png" 
+                 data-description="Website Hotel Sederhana dengan fokus pada tampilan sederhana dan klasik." 
+                 data-project-link="hotel-master/hotel-master/index.html">
+                <img src="images/hotel.png" alt="Hotel">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Movie Website" 
+                 data-image="images/movie.png" 
+                 data-description="Platform untuk menonton film yang sangat berkualitas dan efisien sumber daya." 
+                 data-project-link="movie-ticket/index.html">
+                <img src="images/movie.png" alt="movie website">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Creative Agency Portfolio" 
+                 data-image="https://i.ibb.co/1n5b64c/creative.jpg" 
+                 data-description="Situs portofolio agensi desain yang memamerkan karya-karya inovatif dengan desain minimalis." 
+                 data-project-link="pages/project-creative.html">
+                <img src="https://i.ibb.co/1n5b64c/creative.jpg" alt="Creative Agency Portfolio">
+            </div>
+            
+            <div class="project-card" 
+                 data-title="E-Learning Platform" 
+                 data-image="https://i.ibb.co/V3Kx2Lg/elearning.jpg" 
+                 data-description="Sistem pembelajaran online dengan fitur kursus interaktif, kuis, dan sertifikasi." 
+                 data-project-link="pages/project-elearning.html">
+                <img src="https://i.ibb.co/V3Kx2Lg/elearning.jpg" alt="E-Learning Platform">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Food Delivery App Redesign" 
+                 data-image="https://i.ibb.co/8Y0z200/foodapp.jpg" 
+                 data-description="Desain ulang aplikasi pengiriman makanan untuk pengalaman pengguna yang lebih intuitif dan cepat." 
+                 data-project-link="pages/project-food.html">
+                <img src="https://i.ibb.co/8Y0z200/foodapp.jpg" alt="Food Delivery App Redesign">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Spacify Collection" 
+                 data-image="https://i.ibb.co/L5t655C/spacify.jpg" 
+                 data-description="Website e-commerce modern dengan fokus pada produk gaya hidup dan integrasi fitur unik." 
+                 data-project-link="pages/project-spacify.html">
+                <img src="https://i.ibb.co/L5t655C/spacify.jpg" alt="Spacify Collection">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Fitness & Training App" 
+                 data-image="https://i.ibb.co/y4L261W/fitness.jpg" 
+                 data-description="Platform kebugaran interaktif dengan program latihan personal dan tracking progres." 
+                 data-project-link="pages/project-fitness.html">
+                <img src="https://i.ibb.co/y4L261W/fitness.jpg" alt="Fitness & Training App">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Creative Agency Portfolio" 
+                 data-image="https://i.ibb.co/1n5b64c/creative.jpg" 
+                 data-description="Situs portofolio agensi desain yang memamerkan karya-karya inovatif dengan desain minimalis." 
+                 data-project-link="pages/project-creative.html">
+                <img src="https://i.ibb.co/1n5b64c/creative.jpg" alt="Creative Agency Portfolio">
+            </div>
+            
+            <div class="project-card" 
+                 data-title="E-Learning Platform" 
+                 data-image="https://i.ibb.co/V3Kx2Lg/elearning.jpg" 
+                 data-description="Sistem pembelajaran online dengan fitur kursus interaktif, kuis, dan sertifikasi." 
+                 data-project-link="pages/project-elearning.html">
+                <img src="https://i.ibb.co/V3Kx2Lg/elearning.jpg" alt="E-Learning Platform">
+            </div>
+
+            <div class="project-card" 
+                 data-title="Food Delivery App Redesign" 
+                 data-image="https://i.ibb.co/8Y0z200/foodapp.jpg" 
+                 data-description="Desain ulang aplikasi pengiriman makanan untuk pengalaman pengguna yang lebih intuitif dan cepat." 
+                 data-project-link="pages/project-food.html">
+                <img src="https://i.ibb.co/8Y0z200/foodapp.jpg" alt="Food Delivery App Redesign">
+            </div>
+        </div>
+    </div>
+    <!-- CAROUSEL CONTROLS -->
+    <div class="carousel-controls">
+        <button class="carousel-btn" id="prevProjectBtn" aria-label="Previous Project">
+            <span>&#8249;</span>
+        </button>
+        
+        <button class="carousel-btn" id="nextProjectBtn" aria-label="Next Project">
+            <span>&#8250;</span>
+        </button>
+    </div>
+
+    <!-- INDICATOR DOTS -->
+    <div class="carousel-indicators" id="carouselIndicators"></div>
+
+    <!-- EXPLORE BUTTON -->
+    <a href="#all-projects" class="explore-btn">
+        Explore Projects <span class="arrow">&#8594;</span>
+    </a>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modalProjectImage" src="" alt="Project Image">
+            <h3 id="modalProjectTitle"></h3>
+            <p id="modalProjectDescription"></p>
+            <a id="modalProjectLink" href="#" class="btn-detail-project">Lihat Detail Project</a>
+        </div>
+    </div>
+      </section>
+
       <section class="products" id="products">
         <h2 class="title">Paket</h2>
           <div class="pricing-container">
@@ -205,8 +319,8 @@
 
       <section class="contact" id="kontak">
         <h2 class="title">Contact us!</h2>
+        <div class="form-container">
              <form action="/submit-pemesanan" method="POST">
-            
             <fieldset class="section-fieldset">
                 <legend>Informasi Kontak</legend>
                 <div class="form-group">
@@ -262,6 +376,7 @@
 
             <button type="submit" class="btn-submit">Kirim Pemesanan & Dapatkan Penawaran</button>
         </form>
+        </div>
       </section>
     </main>
 
